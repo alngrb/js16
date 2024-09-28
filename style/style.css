@@ -1,0 +1,386 @@
+
+.modalNumber {
+    position: fixed;
+    bottom: 50px;
+    right: 70px;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    gap: 20px;
+    font-size: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+border: 4px solid black;
+    display: none;
+}
+
+.modalNumber.show {
+    display: flex;
+}
+
+.content {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.px-150 {
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+
+/* сброс стилей начало*/
+* {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    border: none;
+    list-style: none;
+}
+
+/* подключение шрифтов */
+.montserrat-alternates-thin {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.montserrat-alternates-extralight {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.montserrat-alternates-light {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.montserrat-alternates-regular {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.montserrat-alternates-medium {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.montserrat-alternates-semibold {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.montserrat-alternates-bold {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.montserrat-alternates-extrabold {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.montserrat-alternates-black {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+
+
+/* фиксированная ширина начало */
+.ser {
+    max-width: 1420px;
+    margin: 0 auto;
+}
+
+body {
+    background: white;
+}
+
+
+/* начало шапочки */
+.header {
+    display: flex;
+    width: 1420px;
+    padding: 20px 0px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar {
+
+    display: flex;
+    width: 1420px;
+    padding: 20px 0px;
+    justify-content: space-between;
+    align-items: center;
+    width: 444px;
+    height: 25px;
+    flex-shrink: 0;
+    padding-left: 60px;
+    padding-right: 138px;
+}
+
+.menu-item {
+    transition: 1s;
+    color: rgb(150, 98, 98);
+    font-family: Montserrat Alternates;
+    font-size: 19px;
+    font-weight: 600;
+    line-height: 150%;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.head-korzin {
+    padding-left: 20px;
+}
+
+.menu-item:hover {
+    color: rgb(165, 165, 165);
+}
+
+/* конец шапочки */
+
+
+.onas_m {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0 4px;
+    align-items: center;
+    margin-left: 100px;
+    margin-top: 50px;
+}
+
+.onas_info {
+    max-width: 580px;
+}
+
+.onas_title {
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-style: normal;
+    line-height: 60px;
+    letter-spacing: -1px;
+    margin-bottom: 5px;
+
+    color: rgb(30, 1, 1);
+    font-family: Montserrat Alternates;
+    font-size: 62px;
+    font-weight: 700;
+    line-height: 150%;
+}
+
+.onas_desk {
+    font-style: normal;
+    font-weight: 300;
+    letter-spacing: -0.2px;
+    margin-bottom: 50px;
+
+    color: rgb(30, 1, 1);
+    font-family: Montserrat Alternates;
+    font-size: 27px;
+    font-weight: 400;
+    line-height: 150%;
+    padding-bottom: 20px;
+}
+
+.onas_desk:last-child {
+    margin-bottom: 0;
+}
+
+.onas_pic {
+    transition: 2s;
+}
+
+.onas_pic:hover {
+    transform: scale(1.1);
+}
+
+.bun-a {
+    transition: 1s;
+    margin-left: 10px;
+
+    width: 380.9px;
+    height: 114.54px;
+    border-radius: 50px;
+    background: rgb(222, 182, 174);
+    color: rgb(30, 1, 1);
+    font-family: Montserrat;
+    font-size: 23.56px;
+    font-weight: 500;
+    line-height: 152%;
+    letter-spacing: 0%;
+    text-align: center;
+    padding: 40px 60px 40px 60px;
+}
+
+.bun-a:hover {
+    background: rgb(30, 1, 1);
+    color: #F5F3E5;
+}
+
+/* конец блока о нас */
+
+
+/* начало блока каталог */
+.naprav {
+
+    margin-bottom: 120px;
+}
+
+.naprav_cards {
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    grid-gap: 40px;
+    color: black;
+    flex-direction: row;
+}
+
+.naprav_card {
+    background: rgb(222, 182, 174);
+    border-radius: 8px;
+    width: 420px;
+    height: 700px;
+
+}
+
+.napr_card-thumb {
+    border-radius: 8px;
+    width: 420px;
+    height: 445px;
+    align-self: stretch;
+}
+
+.naprav_card-card {
+    display: flex;
+    padding: 50px 44px 14px 44px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    align-self: stretch;
+}
+
+.c3 {
+    gap: 14px;
+    padding-top: 15px;
+}
+
+.naprav_title {
+    text-align: center;
+    font-style: normal;
+    padding-top: 100px;
+    padding-bottom: 50px;
+
+    color: rgb(30, 1, 1);
+    font-family: Montserrat Alternates;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 133%;
+}
+
+.naprav_card-title {
+    align-self: stretch;
+    font-style: normal;
+    color: rgb(30, 30, 30);
+    font-family: Montserrat Alternates;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 143%;
+
+}
+
+.naprav_cena {
+    /* width: 98px; */
+    font-style: normal;
+    color: rgb(30, 30, 30);
+    font-family: Montserrat Alternates;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 150%;
+}
+
+.naprav_card-but {
+    margin-bottom: 50px;
+    margin-left: 39px;
+}
+
+.but-card {
+    display: flex;
+    padding: 20px 40px 20px 40px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 100px;
+    background: #ffffff;
+    text-align: center;
+    font-style: normal;
+    ;
+    transition: 1s;
+
+
+    color: rgb(30, 30, 30);
+    font-family: Montserrat Alternates;
+    font-size: 21px;
+    font-weight: 500;
+    line-height: 152%;
+    width: 100px;
+}
+
+.but-card:hover {
+    background-color: rgb(23, 12, 12);
+    color: #ffffff;
+}
+
+/* конец блока каталог */
+
+/* начало блока акции */
+.skidki {
+    background: no-repeat center url(../style/index/skidka.png);
+    height: 575px;
+
+}
+
+.skid-text {
+    padding-top: 140px;
+    padding-left: 200px;
+}
+
+.sk-tx {
+    color: rgb(51, 36, 34);
+    font-family: Montserrat Alternates;
+    font-size: 60px;
+    font-weight: 800;
+    line-height: 102%;
+    padding-bottom: 30px;
+
+}
+
+.sk-tx-2 {
+    color: rgb(158, 85, 85);
+    font-family: Montserrat Alternates;
+    font-size: 50px;
+    font-weight: 800;
+    line-height: 95%;
+    padding-bottom: 30px;
+}
+
+.sk-tx-3 {
+    color: rgb(51, 36, 34);
+    font-family: Montserrat Alternates;
+    font-size: 30.82px;
+    font-weight: 700;
+    line-height: 95%;
+}
+
+/* конец блока акции */
+
